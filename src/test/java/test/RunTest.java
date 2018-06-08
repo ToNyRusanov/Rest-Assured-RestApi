@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "C:\\Users\\DELL 3\\eclipse-workspace\\TestRestApiWithCucumber\\src\\test\\resources\\future",
+@CucumberOptions(features = "src/test/resources/future",
 				 glue = "test",
 				 tags = "@rest",
 				 plugin = {"pretty","html:target/cucumber-report"}	)
