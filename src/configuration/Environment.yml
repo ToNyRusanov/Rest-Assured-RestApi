@@ -1,0 +1,3 @@
+#This file contains the urls, that we will use for our RestApi tests.
+defaultTestEnvironment: &defTestEnv
+ reqRestUrl: "https://reqres.in/api/"
