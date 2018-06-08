@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 				 glue = "test",
 				 tags = "@rest",
 				 plugin = {"pretty","html:target/cucumber-report"}	)
-public class TestRunner {
+public class RunTest {
 
 	
 	
