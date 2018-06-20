@@ -5,9 +5,6 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-/**
- * Created by Petar Petrov on 07-Nov-17.
- */
 public class ReqResUsersModel {
 
     @Expose

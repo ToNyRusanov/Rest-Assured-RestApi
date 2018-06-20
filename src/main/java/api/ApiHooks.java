@@ -1,11 +1,12 @@
-package estafet.api;
+package api;
 
 
 import com.google.inject.Inject;
+
+import core.ReqRest;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.runtime.java.guice.ScenarioScoped;
-import estafet.core.ReqRest;
 import io.restassured.RestAssured;
 
 
@@ -17,12 +18,17 @@ public class ApiHooks {
 		this.request = request;
 	}
 	
-	@Before("@rest1")
+	@Before("@rest")
 	public void apiData() {
 		System.out.println("Start test");
-		
-		//RestAssured.baseURI = "https://reqres.in/api";
-		//RestAssured.basePath = "/users/";
+		/*
+		 * baseURI method will set globally the URI that you want to connect. It have to
+		 * be setted into a constructor or method. After that in given() method of
+		 * RestAssured class, this URI will be loaded automatically.
+		 * basePath method will set the end point for the API.
+		 */
+		RestAssured.baseURI = "https://reqres.in/api";
+		RestAssured.basePath = "/users/";
 	}
 	@After("@rest1")
 	public void after() {

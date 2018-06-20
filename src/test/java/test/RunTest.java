@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/future",
-				 glue = "test",
+				 glue = {"test","api"},
 				 tags = "@rest",
 				 plugin = {"pretty","html:target/cucumber-report"}	)
 public class RunTest {

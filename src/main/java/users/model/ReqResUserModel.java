@@ -3,9 +3,6 @@ package users.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by Petar Petrov on 07-Nov-17.
- */
 public class ReqResUserModel {
 
     @Expose

@@ -6,9 +6,6 @@ import cucumber.runtime.java.guice.ScenarioScoped;
 
 import java.util.Map;
 
-/**
- * Created by Pesho on 15-Sep-17.
- */
 
 /**
  * This class holds information that needs to be shared across the entire test.
